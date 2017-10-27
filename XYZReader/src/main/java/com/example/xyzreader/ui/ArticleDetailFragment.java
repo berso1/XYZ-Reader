@@ -132,7 +132,7 @@ public class ArticleDetailFragment extends Fragment implements
                     photo.setVisibility(View.GONE);
                     isShow = true;
                 } else if(isShow) {
-                    collapsingToolbarLayout.setTitle(" ");//carefull there should a space between double quote otherwise it wont work
+                    collapsingToolbarLayout.setTitle(" ");
                     isShow = false;
                     photo.setVisibility(View.VISIBLE);
 
@@ -171,14 +171,14 @@ public class ArticleDetailFragment extends Fragment implements
     }
 
     static float progress(float v, float min, float max) {
-        return constrain((v - min) / (max - min), 0, 1);
+        return constrain((v - min) / (max - min));
     }
 
-    static float constrain(float val, float min, float max) {
-        if (val < min) {
-            return min;
-        } else if (val > max) {
-            return max;
+    static float constrain(float val) {
+        if (val < (float) 0) {
+            return (float) 0;
+        } else if (val > (float) 1) {
+            return (float) 1;
         } else {
             return val;
         }

@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinatorLayout"
-    android:background="@color/activitiBackgroundColor"
     android:fitsSystemWindows="true"
-    tools:context="com.example.xyzreader.ui.ArticleListActivity">
+    tools:context="com.example.xyzreader.ui.ArticleListActivity"
+    tools:ignore="Overdraw">
 
 
     <android.support.v4.widget.SwipeRefreshLayout

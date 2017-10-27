@@ -22,8 +22,6 @@
     <color name="colorPrimaryDark">#512DA8</color>
     <color name="colorAccent">#FF5722</color>
 
-    <color name="activitiBackgroundColor">#ffe0e0e0</color>
-
     <color name="primaryText">#de000000</color>
     <color name="secondaryText">#8a000000</color>
     <color name="tertiaryText">#F5F5F5</color>
